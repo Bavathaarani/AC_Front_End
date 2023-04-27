@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
 
     this.service.login(this.Obj).subscribe(
       res=>{
+        alert(this.responsedata);
         this.responsedata=res;
       this.userId=this.responsedata.userId;
      this.service.set( this.userId);

@@ -95,6 +95,7 @@ export class SignupComponent implements OnInit {
            res=>{
             this.SignupForm.reset();
             alert("Admin Signup Sucessful");
+            this.router.navigate(['user/login']);
            },
            err=>{
             alert("Admin Signup Not Sucessful");
